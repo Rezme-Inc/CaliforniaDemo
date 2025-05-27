@@ -45,6 +45,7 @@ export default function Home() {
       icon: Scale,
       color: 'bg-primary',
       textColor: 'text-primary',
+      link: 'https://eeoc.rezmedemo.com/'
     },
     {
       name: 'Restorative Record',
