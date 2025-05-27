@@ -23,7 +23,7 @@ export function Footer() {
               <Link href="https://www.rezme.app/about" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">About</Link>
               <Link href="https://www.rezme.app/product" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">Product</Link>
               <Link href="https://www.rezme.app/resources" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">Resources</Link>
-              <Link href="/signin" className="block text-gray-700 hover:text-black">Sign In</Link>
+              <Link href="https://www.rezme.app/signin" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">Sign In</Link>
             </nav>
           </div>
 

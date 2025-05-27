@@ -63,10 +63,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-              California Fair Chance Assessment Menu
+              Start Your Compliance Journey
             </h1>
             <p className="mt-6 text-xl text-secondary sm:text-2xl max-w-3xl mx-auto">
-              We start with the applicable laws, choose one or more to begin your journey to automated Fair Chance compliance
+              Choose one or more of the jurisdictions below to build your fair chance hiring optimization plan.
             </p>
           </div>
 
