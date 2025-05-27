@@ -1,85 +1,53 @@
 import Link from 'next/link';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { Linkedin, Twitter } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white pt-16 pb-8">
+    <footer className="bg-white text-black pt-16 pb-8 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {/* Column 1 */}
-          <div>
-            <Link href="/" className="mb-6 block">
-              <img src="/rezme-logo.png" alt="Rezme" className="h-8" />
-            </Link>
-            <nav className="space-y-4">
-              <Link href="/" className="block hover:text-gray-300">Home</Link>
-              <Link href="/about" className="block hover:text-gray-300">About Us</Link>
-              <Link href="/products" className="block hover:text-gray-300">Products</Link>
-              <Link href="/integrations" className="block hover:text-gray-300">Integrations</Link>
-              <Link href="/insights" className="block hover:text-gray-300">Insights</Link>
-            </nav>
-          </div>
-
-          {/* Column 2 */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Legal</h3>
-            <nav className="space-y-4">
-              <Link href="/open-ai" className="block hover:text-gray-300">
-                Open AI Data Processing Agreement
-              </Link>
-              <Link href="/branding" className="block hover:text-gray-300">Branding</Link>
-              <Link href="/onboarding" className="block hover:text-gray-300">Onboarding Guide</Link>
-              <Link href="/privacy" className="block hover:text-gray-300">Privacy Policy</Link>
-              <Link href="/terms" className="block hover:text-gray-300">Terms of Service</Link>
-            </nav>
-          </div>
-
-          {/* Column 3 */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Resources</h3>
-            <nav className="space-y-4">
-              <Link href="/cookies" className="block hover:text-gray-300">Cookies Policy</Link>
-              <Link href="/disclaimer" className="block hover:text-gray-300">Disclaimer</Link>
-              <Link href="https://app.vanta.com/rezme.app/trust/kbynv6xr5c2g82tzmhq3qz/controls" className="block hover:text-gray-300">
-                Trust Center
-              </Link>
-            </nav>
-          </div>
-
-          {/* Column 4 */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Have a question?</h3>
-            <div className="space-y-4">
-              <Input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
-              />
-              <Button className="w-full bg-primary hover:bg-primary/90">
-                Submit
-              </Button>
-              <p className="text-sm text-gray-400">
-                By choosing to submit your email address you agree with our Privacy Policy
-              </p>
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-12 mb-12">
+          {/* Logo and Tagline */}
+          <div className="md:w-1/3 mb-8 md:mb-0">
+            <div className="text-3xl font-bold mb-4 select-none">
+              <span className="text-black">réz</span><span className="text-red-500">me.</span>
             </div>
+            <p className="text-gray-600 text-lg max-w-xs">
+              Automating Fair Chance Hiring compliance for modern HR teams.
+            </p>
+          </div>
+
+          {/* Navigation */}
+          <div className="md:w-1/3 mb-8 md:mb-0">
+            <h3 className="text-lg font-semibold mb-4">Navigation</h3>
+            <nav className="space-y-2">
+              <Link href="https://www.rezme.app/" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">Home</Link>
+              <Link href="https://www.rezme.app/about" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">About</Link>
+              <Link href="https://www.rezme.app/product" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">Product</Link>
+              <Link href="https://www.rezme.app/resources" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">Resources</Link>
+              <Link href="/signin" className="block text-gray-700 hover:text-black">Sign In</Link>
+            </nav>
+          </div>
+
+          {/* Legal & Policies */}
+          <div className="md:w-1/3">
+            <h3 className="text-lg font-semibold mb-4">Legal & Policies</h3>
+            <nav className="space-y-2">
+              <Link href="https://app.termly.io/policy-viewer/policy.html?policyUUID=e05577fe-11ce-47d5-9a97-c994b0ee6acf" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">Privacy Policy</Link>
+              <Link href="https://app.termly.io/policy-viewer/policy.html?policyUUID=6947f494-a92e-419a-82df-ddc2ec5a1743" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">Cookie Policy</Link>
+              <Link href="https://app.termly.io/policy-viewer/policy.html?policyUUID=40404d5f-9640-47ad-bab0-8f2bb32aabc8" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">Terms & Conditions</Link>
+              <Link href="https://app.termly.io/policy-viewer/policy.html?policyUUID=2dee6321-2901-4da4-a2e6-d31333c34462" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">Disclaimer</Link>
+              <Link href="https://www.canva.com/design/DAGbAYTxAqQ/7VXnGimgiKAWzBXfJBfbVQ/edit" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">Branding Guidelines</Link>
+              <Link href="https://app.pactsafe.com/sign?r=656335a17c5752be211f42bb&s=656335a17c5752be211f42bd&signature=mmgK3G~HAApM5Xp-bZmWlgO~3DQka7e6OqzsCyEpDIs8Zu8uJzmbCAbS7-89E~L0ZHCSQ6kytTBr7FSbyyX7o4AHaqssthcwwdXE7Njy1jo~w9z3bFUHh5ThLRfplS~VaSSCygyKw2cQ-dOm23rVhjJHS2Twn4JH9K4i5uo-Ihawo8NnVls~s~wzitNBCfJL5hBzarsxGYbgW-nN8pVMFKfslOzJWQrnNoogynAaEToOjkaraNcyPgmVaY8l4iYvZJxzmVR1rxwDDJH8gghYZmYjk0Oqn-r4glbTauhuqiwo391PrnsXA6KTZdZ2ovSo8o-egdfyXtOuGIHqIJqVSQ__" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">Open AI Data Processing Agreement</Link>
+              <Link href="https://app.vanta.com/rezme.app/trust/kbynv6xr5c2g82tzmhq3qz/controls" className="block text-gray-700 hover:text-black" target="_blank" rel="noopener noreferrer">Trust Center</Link>
+            </nav>
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-gray-400">
-            © 2024 Rezme, Inc. All Rights Reserved Worldwide
-          </p>
-          <div className="flex space-x-4">
-            <Link href="https://linkedin.com" className="text-gray-400 hover:text-white">
-              <Linkedin className="h-5 w-5" />
-            </Link>
-            <Link href="https://twitter.com" className="text-gray-400 hover:text-white">
-              <Twitter className="h-5 w-5" />
-            </Link>
-          </div>
+        {/* Divider */}
+        <div className="border-t border-gray-200 my-8" />
+
+        {/* Copyright */}
+        <div className="text-center text-gray-500 text-sm">
+          © 2025 Rézme. All rights reserved.
         </div>
       </div>
     </footer>
