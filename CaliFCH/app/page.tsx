@@ -59,7 +59,16 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-background font-poppins flex flex-col">
+    <div className="min-h-screen bg-background font-poppins flex flex-col relative">
+      {/* Floating Start Now Button */}
+      <a
+        href="https://calendly.com/ryan-rezme/30min?month=2025-05"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed z-50 bottom-8 right-8 bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-2 text-lg font-semibold transition-all duration-200"
+      >
+        Start Now
+      </a>
       <main className="flex-grow">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-6">
