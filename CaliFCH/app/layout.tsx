@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'California Fair Chance Assessment Portal',
-  description: 'A comprehensive portal for Fair Chance Act compliance across California jurisdictions',
+  title: 'Fair Chance Hiring Compliance Portal',
+  description: 'A comprehensive portal for Fair Chance Hiringcompliance across multiple jurisdictions',
 };
 
 export default function RootLayout({
