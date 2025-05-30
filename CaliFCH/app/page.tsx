@@ -67,7 +67,7 @@ export default function Home() {
         rel="noopener noreferrer"
         className="fixed z-50 bottom-8 right-8 bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-2 text-lg font-semibold transition-all duration-200"
       >
-        Start Now
+        Get Live Support
       </a>
       <main className="flex-grow">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
